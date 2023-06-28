@@ -40,19 +40,19 @@ bp-messages = { path = "../../primitives/messages" }
 
 # Substrate Dependencies
 
-frame-support = { git = "https://github.com/Cardinal-Cryptography/substrate.git", branch = "aleph-v0.9.41" }
-frame-system = { git = "https://github.com/Cardinal-Cryptography/substrate.git", branch = "aleph-v0.9.41" }
-pallet-balances = { git = "https://github.com/Cardinal-Cryptography/substrate.git", branch = "aleph-v0.9.41" }
-sp-core = { git = "https://github.com/Cardinal-Cryptography/substrate.git", branch = "aleph-v0.9.41" }
-sp-consensus-grandpa = { git = "https://github.com/Cardinal-Cryptography/substrate.git", branch = "aleph-v0.9.41" }
-sp-runtime = { git = "https://github.com/Cardinal-Cryptography/substrate.git", branch = "aleph-v0.9.41" }
+frame-support = { git = "https://github.com/Cardinal-Cryptography/substrate.git", branch = "obrok/aleph-v0.9.41-wasmtime8" }
+frame-system = { git = "https://github.com/Cardinal-Cryptography/substrate.git", branch = "obrok/aleph-v0.9.41-wasmtime8" }
+pallet-balances = { git = "https://github.com/Cardinal-Cryptography/substrate.git", branch = "obrok/aleph-v0.9.41-wasmtime8" }
+sp-core = { git = "https://github.com/Cardinal-Cryptography/substrate.git", branch = "obrok/aleph-v0.9.41-wasmtime8" }
+sp-consensus-grandpa = { git = "https://github.com/Cardinal-Cryptography/substrate.git", branch = "obrok/aleph-v0.9.41-wasmtime8" }
+sp-runtime = { git = "https://github.com/Cardinal-Cryptography/substrate.git", branch = "obrok/aleph-v0.9.41-wasmtime8" }
 
 [dev-dependencies]
 bp-rialto = { path = "../../primitives/chain-rialto" }
 bp-rialto-parachain = { path = "../../primitives/chain-rialto-parachain" }
 bp-rococo = { path = "../../primitives/chain-rococo" }
 bp-wococo = { path = "../../primitives/chain-wococo" }
-pallet-transaction-payment = { git = "https://github.com/Cardinal-Cryptography/substrate.git", branch = "aleph-v0.9.41" }
+pallet-transaction-payment = { git = "https://github.com/Cardinal-Cryptography/substrate.git", branch = "obrok/aleph-v0.9.41-wasmtime8" }
 relay-rialto-client = { path = "../client-rialto" }
 relay-rococo-client = { path = "../client-rococo" }
 relay-wococo-client = { path = "../client-wococo" }

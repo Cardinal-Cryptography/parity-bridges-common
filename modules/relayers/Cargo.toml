@@ -20,19 +20,19 @@ pallet-bridge-messages = { path = "../messages", default-features = false }
 
 # Substrate Dependencies
 
-frame-benchmarking = { git = "https://github.com/Cardinal-Cryptography/substrate.git", branch = "aleph-v0.9.41", default-features = false, optional = true }
-frame-support = { git = "https://github.com/Cardinal-Cryptography/substrate.git", branch = "aleph-v0.9.41", default-features = false }
-frame-system = { git = "https://github.com/Cardinal-Cryptography/substrate.git", branch = "aleph-v0.9.41", default-features = false }
-sp-arithmetic = { git = "https://github.com/Cardinal-Cryptography/substrate.git", branch = "aleph-v0.9.41", default-features = false }
-sp-runtime = { git = "https://github.com/Cardinal-Cryptography/substrate.git", branch = "aleph-v0.9.41", default-features = false }
-sp-std = { git = "https://github.com/Cardinal-Cryptography/substrate.git", branch = "aleph-v0.9.41", default-features = false }
+frame-benchmarking = { git = "https://github.com/Cardinal-Cryptography/substrate.git", branch = "obrok/aleph-v0.9.41-wasmtime8", default-features = false, optional = true }
+frame-support = { git = "https://github.com/Cardinal-Cryptography/substrate.git", branch = "obrok/aleph-v0.9.41-wasmtime8", default-features = false }
+frame-system = { git = "https://github.com/Cardinal-Cryptography/substrate.git", branch = "obrok/aleph-v0.9.41-wasmtime8", default-features = false }
+sp-arithmetic = { git = "https://github.com/Cardinal-Cryptography/substrate.git", branch = "obrok/aleph-v0.9.41-wasmtime8", default-features = false }
+sp-runtime = { git = "https://github.com/Cardinal-Cryptography/substrate.git", branch = "obrok/aleph-v0.9.41-wasmtime8", default-features = false }
+sp-std = { git = "https://github.com/Cardinal-Cryptography/substrate.git", branch = "obrok/aleph-v0.9.41-wasmtime8", default-features = false }
 
 [dev-dependencies]
 bp-runtime = { path = "../../primitives/runtime" }
-pallet-balances = { git = "https://github.com/Cardinal-Cryptography/substrate.git", branch = "aleph-v0.9.41" }
-sp-core = { git = "https://github.com/Cardinal-Cryptography/substrate.git", branch = "aleph-v0.9.41" }
-sp-io = { git = "https://github.com/Cardinal-Cryptography/substrate.git", branch = "aleph-v0.9.41" }
-sp-runtime = { git = "https://github.com/Cardinal-Cryptography/substrate.git", branch = "aleph-v0.9.41" }
+pallet-balances = { git = "https://github.com/Cardinal-Cryptography/substrate.git", branch = "obrok/aleph-v0.9.41-wasmtime8" }
+sp-core = { git = "https://github.com/Cardinal-Cryptography/substrate.git", branch = "obrok/aleph-v0.9.41-wasmtime8" }
+sp-io = { git = "https://github.com/Cardinal-Cryptography/substrate.git", branch = "obrok/aleph-v0.9.41-wasmtime8" }
+sp-runtime = { git = "https://github.com/Cardinal-Cryptography/substrate.git", branch = "obrok/aleph-v0.9.41-wasmtime8" }
 
 [features]
 default = ["std"]

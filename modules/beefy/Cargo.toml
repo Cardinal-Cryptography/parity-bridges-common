@@ -18,19 +18,19 @@ bp-runtime = { path = "../../primitives/runtime", default-features = false }
 
 # Substrate Dependencies
 
-frame-support = { git = "https://github.com/Cardinal-Cryptography/substrate.git", branch = "aleph-v0.9.41", default-features = false }
-frame-system = { git = "https://github.com/Cardinal-Cryptography/substrate.git", branch = "aleph-v0.9.41", default-features = false }
-sp-core = { git = "https://github.com/Cardinal-Cryptography/substrate.git", branch = "aleph-v0.9.41", default-features = false }
-sp-runtime = { git = "https://github.com/Cardinal-Cryptography/substrate.git", branch = "aleph-v0.9.41", default-features = false }
-sp-std = { git = "https://github.com/Cardinal-Cryptography/substrate.git", branch = "aleph-v0.9.41", default-features = false }
+frame-support = { git = "https://github.com/Cardinal-Cryptography/substrate.git", branch = "obrok/aleph-v0.9.41-wasmtime8", default-features = false }
+frame-system = { git = "https://github.com/Cardinal-Cryptography/substrate.git", branch = "obrok/aleph-v0.9.41-wasmtime8", default-features = false }
+sp-core = { git = "https://github.com/Cardinal-Cryptography/substrate.git", branch = "obrok/aleph-v0.9.41-wasmtime8", default-features = false }
+sp-runtime = { git = "https://github.com/Cardinal-Cryptography/substrate.git", branch = "obrok/aleph-v0.9.41-wasmtime8", default-features = false }
+sp-std = { git = "https://github.com/Cardinal-Cryptography/substrate.git", branch = "obrok/aleph-v0.9.41-wasmtime8", default-features = false }
 
 [dev-dependencies]
-sp-consensus-beefy = { git = "https://github.com/Cardinal-Cryptography/substrate.git", branch = "aleph-v0.9.41" }
+sp-consensus-beefy = { git = "https://github.com/Cardinal-Cryptography/substrate.git", branch = "obrok/aleph-v0.9.41-wasmtime8" }
 mmr-lib = { package = "ckb-merkle-mountain-range", version = "0.3.2" }
-pallet-beefy-mmr = { git = "https://github.com/Cardinal-Cryptography/substrate.git", branch = "aleph-v0.9.41" }
-pallet-mmr = { git = "https://github.com/Cardinal-Cryptography/substrate.git", branch = "aleph-v0.9.41" }
+pallet-beefy-mmr = { git = "https://github.com/Cardinal-Cryptography/substrate.git", branch = "obrok/aleph-v0.9.41-wasmtime8" }
+pallet-mmr = { git = "https://github.com/Cardinal-Cryptography/substrate.git", branch = "obrok/aleph-v0.9.41-wasmtime8" }
 rand = "0.8"
-sp-io = { git = "https://github.com/Cardinal-Cryptography/substrate.git", branch = "aleph-v0.9.41" }
+sp-io = { git = "https://github.com/Cardinal-Cryptography/substrate.git", branch = "obrok/aleph-v0.9.41-wasmtime8" }
 bp-test-utils = { path = "../../primitives/test-utils" }
 
 [features]

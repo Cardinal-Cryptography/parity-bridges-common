@@ -25,6 +25,6 @@ relay-substrate-client = { path = "../client-substrate" }
 
 # Substrate Dependencies
 
-sp-core = { git = "https://github.com/Cardinal-Cryptography/substrate.git", branch = "aleph-v0.9.41" }
-sp-runtime = { git = "https://github.com/Cardinal-Cryptography/substrate.git", branch = "aleph-v0.9.41" }
-sp-weights = { git = "https://github.com/Cardinal-Cryptography/substrate.git", branch = "aleph-v0.9.41" }
+sp-core = { git = "https://github.com/Cardinal-Cryptography/substrate.git", branch = "obrok/aleph-v0.9.41-wasmtime8" }
+sp-runtime = { git = "https://github.com/Cardinal-Cryptography/substrate.git", branch = "obrok/aleph-v0.9.41-wasmtime8" }
+sp-weights = { git = "https://github.com/Cardinal-Cryptography/substrate.git", branch = "obrok/aleph-v0.9.41-wasmtime8" }
