@@ -23,7 +23,8 @@ pub use registration::{Registration, StakeAndSlash};
 
 use bp_messages::LaneId;
 use bp_runtime::{ChainId, StorageDoubleMapKeyProvider};
-use frame_support::{traits::tokens::Preservation, Blake2_128Concat, Identity};
+use frame_support::Blake2_128Concat;
+use frame_support::Identity;
 use scale_info::TypeInfo;
 use sp_runtime::{
 	codec::{Codec, Decode, Encode, EncodeLike, MaxEncodedLen},
@@ -114,7 +115,7 @@ where
 
 impl<T, Relayer> PaymentProcedure<Relayer, T::Balance> for PayRewardFromAccount<T, Relayer>
 where
-	T: frame_support::traits::fungible::Mutate<Relayer>,
+	T: frame_support::traits::fungible::Transfer<Relayer>,
 	Relayer: Decode + Encode,
 {
 	type Error = sp_runtime::DispatchError;
@@ -124,13 +125,8 @@ where
 		rewards_account_params: RewardsAccountParams,
 		reward: T::Balance,
 	) -> Result<(), Self::Error> {
-		T::transfer(
-			&Self::rewards_account(rewards_account_params),
-			relayer,
-			reward,
-			Preservation::Expendable,
-		)
-		.map(drop)
+		T::transfer(&Self::rewards_account(rewards_account_params), relayer, reward, false)
+			.map(drop)
 	}
 }
 
